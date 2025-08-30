@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - MR.GREEN Builders & Interiors</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="public/logonav.png" alt="MR.GREEN Logo" class="logo-img">
+                    
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link ">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link active">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Projects</h1>
+            <p>Showcasing our completed works and success stories</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="interior">Interior Design</button>
+                <button class="filter-btn" data-filter="kitchen">Modular Kitchen</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <div class="container">
+            <div class="projects-grid">
+                <div class="project-card detailed" data-category="residential">
+                    <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Modern Villa" class="project-image">
+                    <div class="project-content">
+                        <h4>Modern Villa Construction</h4>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Karur, Tamil Nadu</p>
+                        <p class="project-description">Contemporary 3BHK villa with modern amenities, spacious rooms, and elegant design. Features include modular kitchen, false ceiling, and premium finishes.</p>
+                        <div class="project-details">
+                            <span class="project-area"><i class="fas fa-ruler-combined"></i> 2,500 sq ft</span>
+                            <span class="project-duration"><i class="fas fa-calendar"></i> 8 months</span>
+                            <span class="project-cost"><i class="fas fa-rupee-sign"></i> 45 Lakhs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card detailed" data-category="interior">
+                    <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Interior Design" class="project-image">
+                    <div class="project-content">
+                        <h4>Luxury Interior Design</h4>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Trichy, Tamil Nadu</p>
+                        <p class="project-description">Complete interior makeover with premium finishes, custom furniture, and sophisticated lighting design creating an elegant living space.</p>
+                        <div class="project-details">
+                            <span class="project-area"><i class="fas fa-ruler-combined"></i> 1,800 sq ft</span>
+                            <span class="project-duration"><i class="fas fa-calendar"></i> 4 months</span>
+                            <span class="project-cost"><i class="fas fa-rupee-sign"></i> 18 Lakhs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card detailed" data-category="kitchen">
+                    <img src="https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Modular Kitchen" class="project-image">
+                    <div class="project-content">
+                        <h4>Modular Kitchen Design</h4>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Salem, Tamil Nadu</p>
+                        <p class="project-description">Smart modular kitchen with island counter, premium appliances, and optimized storage solutions for modern cooking needs.</p>
+                        <div class="project-details">
+                            <span class="project-area"><i class="fas fa-ruler-combined"></i> 200 sq ft</span>
+                            <span class="project-duration"><i class="fas fa-calendar"></i> 1 month</span>
+                            <span class="project-cost"><i class="fas fa-rupee-sign"></i> 3.5 Lakhs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card detailed" data-category="commercial">
+                    <img src="https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Commercial Space" class="project-image">
+                    <div class="project-content">
+                        <h4>Commercial Interior</h4>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Coimbatore, Tamil Nadu</p>
+                        <p class="project-description">Office space design with modern aesthetics, ergonomic furniture, and efficient space utilization for enhanced productivity.</p>
+                        <div class="project-details">
+                            <span class="project-area"><i class="fas fa-ruler-combined"></i> 3,000 sq ft</span>
+                            <span class="project-duration"><i class="fas fa-calendar"></i> 3 months</span>
+                            <span class="project-cost"><i class="fas fa-rupee-sign"></i> 12 Lakhs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card detailed" data-category="residential">
+                    <img src="https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Bedroom Design" class="project-image">
+                    <div class="project-content">
+                        <h4>Master Bedroom Suite</h4>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Erode, Tamil Nadu</p>
+                        <p class="project-description">Elegant bedroom with walk-in wardrobe, premium lighting, and luxurious finishes creating a perfect retreat space.</p>
+                        <div class="project-details">
+                            <span class="project-area"><i class="fas fa-ruler-combined"></i> 400 sq ft</span>
+                            <span class="project-duration"><i class="fas fa-calendar"></i> 6 weeks</span>
+                            <span class="project-cost"><i class="fas fa-rupee-sign"></i> 4 Lakhs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card detailed" data-category="interior">
+                    <img src="https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Living Room" class="project-image">
+                    <div class="project-content">
+                        <h4>Contemporary Living Room</h4>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Namakkal, Tamil Nadu</p>
+                        <p class="project-description">Spacious living area with modern furniture, artistic lighting, and sophisticated color scheme for family gatherings.</p>
+                        <div class="project-details">
+                            <span class="project-area"><i class="fas fa-ruler-combined"></i> 600 sq ft</span>
+                            <span class="project-duration"><i class="fas fa-calendar"></i> 2 months</span>
+                            <span class="project-cost"><i class="fas fa-rupee-sign"></i> 6 Lakhs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics Section -->
+            <div  class="stats-section">
+                 
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Team Members</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://images.pexels.com/photos/1370704/pexels-photo-1370704.jpeg?auto=compress&cs=tinysrgb&w=100&h=60&fit=crop" alt="MR.GREEN Logo" class="logo-img">
+                        <span class="logo-text">MR.GREEN</span>
+                    </div>
+                    <p>Building dreams and creating beautiful spaces since years. Your trusted partner for construction and interior design.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Residential Construction</a></li>
+                        <li><a href="services.html">Interior Design</a></li>
+                        <li><a href="services.html">Modular Kitchens</a></li>
+                        <li><a href="services.html">Renovation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MR.GREEN Builders & Interiors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

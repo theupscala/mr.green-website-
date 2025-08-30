@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR.GREEN Builders & Interiors - Designing Dreams, Building Futures</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="public/logonav.png" alt="MR.GREEN Logo" class="logo-img">
+                    
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- WhatsApp Button -->
+        <div class="whatsapp-button">
+            <a href="https://wa.me/919003660265?text=Hello%20MR.GREEN!%20I'm%20interested%20in%20your%20services." target="_blank" class="whatsapp-link">
+                <i class="fab fa-whatsapp"></i>
+                <span class="whatsapp-text">Chat with us</span>
+            </a>
+        </div>
+        
+        <div class="hero-slider">
+            <div class="slide active" data-bg="https://images.pexels.com/photos/1643384/pexels-photo-1643384.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-text-animation">
+                        <h1 class="hero-title">Designing Dreams, Building Futures</h1>
+                        <p class="hero-subtitle">Professional construction and interior design services in Karur, Tamil Nadu</p>
+                        <div class="hero-buttons">
+                            <a href="contact.html" class="cta-button primary">Get a Free Consultation</a>
+                            <a href="projects.html" class="cta-button secondary">View Our Work</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-bg="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-text-animation">
+                        <h1 class="hero-title">Luxury Interior Design</h1>
+                        <p class="hero-subtitle">Transform your space with our premium interior design solutions</p>
+                        <div class="hero-buttons">
+                            <a href="services.html" class="cta-button primary">Explore Services</a>
+                            <a href="about.html" class="cta-button secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-bg="https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-text-animation">
+                        <h1 class="hero-title">Modern Kitchen Solutions</h1>
+                        <p class="hero-subtitle">Custom modular kitchens designed for contemporary living</p>
+                        <div class="hero-buttons">
+                            <a href="projects.html" class="cta-button primary">View Projects</a>
+                            <a href="services.html" class="cta-button secondary">Kitchen Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-bg="https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-text-animation">
+                        <h1 class="hero-title">Complete Home Construction</h1>
+                        <p class="hero-subtitle">From foundation to finishing - your dream home awaits</p>
+                        <div class="hero-buttons">
+                            <a href="contact.html" class="cta-button primary">Start Your Project</a>
+                            <a href="about.html" class="cta-button secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slider Navigation -->
+        <div class="slider-nav">
+            <button class="nav-btn prev-btn" onclick="changeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="nav-btn next-btn" onclick="changeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        
+        <!-- Slider Indicators -->
+        <div class="slider-indicators">
+            <span class="indicator active" onclick="currentSlide(1)"></span>
+            <span class="indicator" onclick="currentSlide(2)"></span>
+            <span class="indicator" onclick="currentSlide(3)"></span>
+            <span class="indicator" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+
+    <!-- Quick Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Complete construction and interior design solutions</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Residential Construction</h3>
+                    <p>Complete home construction services from foundation to finishing with modern techniques and quality materials.</p>
+                    <a href="services.html" class="service-link">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Interior Design</h3>
+                    <p>Creative interior design solutions that blend functionality with aesthetics to create beautiful living spaces.</p>
+                    <a href="services.html" class="service-link">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Modular Kitchens</h3>
+                    <p>Custom modular kitchen designs with premium materials and smart storage solutions for modern homes.</p>
+                    <a href="services.html" class="service-link">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>False Ceiling & Lighting</h3>
+                    <p>Elegant false ceiling designs with integrated lighting solutions to enhance your space's ambiance.</p>
+                    <a href="services.html" class="service-link">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chair"></i>
+                    </div>
+                    <h3>Furniture Design</h3>
+                    <p>Custom furniture design and manufacturing to perfectly complement your interior spaces.</p>
+                    <a href="services.html" class="service-link">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Renovation & Remodeling</h3>
+                    <p>Complete renovation and remodeling services to transform your existing spaces into dream environments.</p>
+                    <a href="services.html" class="service-link">Learn More</a>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="services.html" class="cta-button primary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of our recent completed works</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Modern Villa" class="project-image">
+                    <div class="project-overlay">
+                        <h4>Modern Villa Construction</h4>
+                        <p>Contemporary 3BHK villa with modern amenities</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Interior Design" class="project-image">
+                    <div class="project-overlay">
+                        <h4>Luxury Interior Design</h4>
+                        <p>Complete interior makeover with premium finishes</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Modular Kitchen" class="project-image">
+                    <div class="project-overlay">
+                        <h4>Modular Kitchen Design</h4>
+                        <p>Smart modular kitchen with island counter</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Commercial Space" class="project-image">
+                    <div class="project-overlay">
+                        <h4>Commercial Interior</h4>
+                        <p>Office space design with modern aesthetics</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Bedroom Design" class="project-image">
+                    <div class="project-overlay">
+                        <h4>Master Bedroom Suite</h4>
+                        <p>Elegant bedroom with walk-in wardrobe</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Living Room" class="project-image">
+                    <div class="project-overlay">
+                        <h4>Contemporary Living Room</h4>
+                        <p>Spacious living area with modern furniture</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="projects.html" class="cta-button primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Get in touch for your next project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Karur, Tamil Nadu, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 90950 60024</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@mrgreen.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="quick-contact">
+                    <h3>Quick Inquiry</h3>
+                    <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    <div class="text-center" style="margin-top: 2rem;">
+                        <a href="contact.html" class="cta-button primary">Visit Contact Page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://images.pexels.com/photos/1370704/pexels-photo-1370704.jpeg?auto=compress&cs=tinysrgb&w=100&h=60&fit=crop" alt="MR.GREEN Logo" class="logo-img">
+                        <span class="logo-text">MR.GREEN</span>
+                    </div>
+                    <p>Building dreams and creating beautiful spaces since years. Your trusted partner for construction and interior design.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Residential Construction</a></li>
+                        <li><a href="services.html">Interior Design</a></li>
+                        <li><a href="services.html">Modular Kitchens</a></li>
+                        <li><a href="services.html">Renovation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MR.GREEN Builders & Interiors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
