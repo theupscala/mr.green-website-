@@ -342,3 +342,30 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+
+
+
+// Apply background images from data-bg
+document.querySelectorAll(".my-slider .slide").forEach(slide => {
+  const bg = slide.getAttribute("data-bg");
+  slide.style.backgroundImage = `url(${bg})`;
+});
+
+let currentSlide = 0;
+const slides = document.querySelectorAll(".my-slider .slide");
+
+function showSlide(index) {
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[index].classList.add("active");
+}
+
+function changeSlide(step) {
+  currentSlide = (currentSlide + step + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+// Auto-slide every 5 seconds
+setInterval(() => {
+  changeSlide(1);
+}, 5000);
